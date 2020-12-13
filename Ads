@@ -7,6 +7,5 @@
   "img":"https://image.freepik.com/free-vector/fresh-toothpaste-advertisement-realistic-style_52683-16160.jpg"},
   {"adsId":3,
    "adsTitle":"Sprite",
-  "img":"https://www.adgully.com/img/800/202008/sprite-campaign-picture.jpg"},
- 
+  "img":"https://www.adgully.com/img/800/202008/sprite-campaign-picture.jpg"}
  ]
