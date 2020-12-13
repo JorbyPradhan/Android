@@ -1,10 +1,12 @@
 [
 {"adsId":1,
+  "adsTitle":"Pizza",
   "img":"https://www.vskills.in/certification/blog/wp-content/uploads/2019/03/Pizza-Hut.png"},
   {"adsId":2,
+  "adsTitle":"Fresh mint toothpaste ",
   "img":"https://image.freepik.com/free-vector/fresh-toothpaste-advertisement-realistic-style_52683-16160.jpg"},
   {"adsId":3,
+   "adsTitle":"Sprite",
   "img":"https://www.adgully.com/img/800/202008/sprite-campaign-picture.jpg"},
-  {"adsId":4,
-  "img":"https://www.adgully.com/img/800/202008/sprite-campaign-picture.jpg"}
+ 
  ]
