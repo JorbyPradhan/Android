@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:gravity="center"
+    android:padding="16dp"
+    android:id="@+id/accountLayout"
+    tools:context=".ui.gallery.GalleryFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card_layout_img"
+            android:layout_width="match_parent"
+            android:layout_height="320dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/bordervetical"
+            android:padding="10dp"
+            app:cardBackgroundColor="@color/lightGrey"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:background="@drawable/bg"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="James Pradhan"
+                    android:textColor="#3b91d7"
+                    android:textSize="20sp"
+                    android:layout_gravity="center"
+                    android:paddingTop="25dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="09705014119"
+                    android:layout_gravity="center"
+                    android:paddingTop="5dp"
+                    android:textColor="#3b91d7"
+                    android:textSize="18sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Kamaryut, Yangon"
+                    android:textColor="#3b91d7"
+                    android:layout_gravity="center"
+                    android:paddingTop="5dp"
+                    android:textSize="18sp"/>
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card_phone_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_margin="10dp"
+                    android:padding="15dp"
+                    app:cardBackgroundColor="@color/colorOnPrimary"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="5dp">
+
+                    <TextView
+                        android:id="@+id/btn_change_profile"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="Change phone number"
+                        android:textColor="@color/green"
+                        android:textSize="20sp" />
+                </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card_pass_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_margin="10dp"
+                    android:padding="15dp"
+                    app:cardBackgroundColor="@color/colorOnPrimary"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="5dp">
+                    <TextView
+                        android:id="@+id/btn_change_pass"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Change Password"
+                        android:gravity="center"
+                        android:textColor="@color/green"
+                        android:textSize="20sp" />
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/profile"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-50dp"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:background="@drawable/circle_bg"
+        android:padding="15dp"
+        android:src="@drawable/logo"/>
+</RelativeLayout>

@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/bg"
+android:layout_marginTop="6dp"
+android:id="@+id/bottom_sheet1"
+app:behavior_hideable="true"
+app:behavior_peekHeight="0dp"
+app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+</androidx.constraintlayout.widget.ConstraintLayout>
+<!--
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar1"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    <TextView
+        android:id="@+id/text_gallery"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:background="@drawable/bordervetical"
+        android:text="အက္ခရာ"
+        android:gravity="center"
+        android:textColor="@color/colorPink"
+        android:layout_marginTop="16dp"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:textAlignment="center"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar1" />
+
+    <EditText
+        android:id="@+id/edt_first_char"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bordervetical"
+        android:drawableEnd="@drawable/ic_baseline_keyboard_arrow_down_24"
+        android:drawablePadding="10dp"
+        android:hint="ကထ"
+        android:maxLength="2"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:textColor="@color/colorPink"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toStartOf="@+id/edt_end_char"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_gallery" />
+
+    <EditText
+        android:id="@+id/edt_end_char"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/bordervetical"
+        android:drawableEnd="@drawable/ic_baseline_keyboard_arrow_down_24"
+        android:drawablePadding="10dp"
+        android:hint="ကထ"
+        android:maxLength="2"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:textColor="@color/colorPink"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_gallery" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="3dip"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="26dp"
+        android:background="@color/lightGrey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_first_char" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/circle"
+        android:gravity="center"
+        android:text="စ"
+        android:textColor="@color/colorPink"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <com.chaos.view.PinView
+        android:id="@+id/pinView_first"
+        style="@style/PinWidget.PinView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="123"
+        android:cursorVisible="true"
+        android:inputType="number"
+        android:padding="5dp"
+        android:textColor="@color/colorPink"
+        android:textColorHint="@color/lightGrey"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:cursorColor="@color/colorAccent"
+        app:hideLineWhenFilled="true"
+        app:cursorWidth="2dp"
+        app:itemCount="3"
+        app:itemSpacing="16dp"
+        app:lineColor="@color/colorBlack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.188"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        app:lineWidth="3dp"
+        app:viewType="line" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="3dip"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="26dp"
+        android:background="@color/lightGrey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pinView_first" />
+    <TextView
+        android:id="@+id/textViewEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/circle"
+        android:gravity="center"
+        android:text="ဆုံး"
+        android:textColor="@color/colorPink"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view1" />
+
+    <com.chaos.view.PinView
+        android:id="@+id/pinView_end"
+        style="@style/PinWidget.PinView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="123"
+        android:cursorVisible="true"
+        android:inputType="number"
+        android:padding="5dp"
+        android:textColor="@color/colorPink"
+        android:textColorHint="@color/lightGrey"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:cursorColor="@color/colorAccent"
+        app:hideLineWhenFilled="true"
+        app:cursorWidth="2dp"
+        app:itemCount="3"
+        app:itemSpacing="16dp"
+        app:lineColor="@color/colorBlack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.188"
+        app:layout_constraintStart_toEndOf="@+id/textViewEnd"
+        app:layout_constraintTop_toBottomOf="@+id/view1"
+        app:lineWidth="3dp"
+        app:viewType="line" />
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="2dip"
+        android:layout_marginTop="16dp"
+        android:background="@color/lightGrey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pinView_end" />
+
+    <TextView
+        android:id="@+id/dis_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="Your number is \n A 123567"
+        android:textColor="@color/colorPink"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/submitOk"
+        style="@style/Theme.MaterialComponents.Light.NoActionBar"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        app:cardBackgroundColor="@color/colorGoldBack"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dis_num"
+        app:layout_constraintVertical_bias="0.303" >
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:textColor="@color/colorPink"
+            android:textSize="20sp"
+            android:background="@drawable/button_design"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="OK"/>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>-->

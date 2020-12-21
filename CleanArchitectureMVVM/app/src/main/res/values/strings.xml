@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">CleanArchitectureMVVM</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="api_key">7142a40c54b2c690a1f53e697a1d51aa</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_popular">Popular</string>
+    <string name="menu_trend">Trending</string>
+    <string name="movie">Movie</string>
+    <string name="tv_shows">TV Shows</string>
+    <string name="previous">Previous</string>
+    <string name="next">Next</string>
+    <string name="now_playing">Now Playing</string>
+    <string name="upcoming">Upcoming</string>
+    <string name="top_rated">Top Rated</string>
+    <string name="trending_movie">Trending</string>
+    <string name="airing_today">Airing Today</string>
+    <string name="on_tv">On TV</string>
+    <string name="hello_world">Earths mightiest heroes must come together and learn to fight as a team if they are going to stop the mischievous Loki and his alien army from enslaving humanity.
+
+    </string>
+    <string name="save_post">Save Post</string>
+    <string name="overview">Overview</string>
+    <string name="credits">Credits</string>
+    <string name="reviews">Reviews</string>
+    <string name="cast">Cast</string>
+    <string name="director">Director</string>
+    <string name="producer">Producer</string>
+    <string name="content">Content</string>
+    <string name="saved">Saved</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome!"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="logout">Logout</string>
+    <string name="login">Login</string>
+    <string name="add_download_link">Add Download Link</string>
+    <string name="update">Upload</string>
+    <string name="add_trailer_link">Add Trailer Link</string>
+
+
+</resources>

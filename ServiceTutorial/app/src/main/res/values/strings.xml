@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">ServiceTutorial</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="signUp">Don\'t have an account?<a href="http://www.android4beginners.com"> SignUp</a></string>
+    <string name="sign_up">SignUp....</string>
+    <string name="btn_sign">SignUp >></string>
+    <string name="enter_name">Enter Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="code">Enter the code that was send to</string>
+    <string name="verify">Verify</string>
+    <string name="resend_again">Resend again?</string>
+    <string name="search">Search</string>
+</resources>

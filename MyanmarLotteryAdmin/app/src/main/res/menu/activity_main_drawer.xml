@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:id="@+id/nav_home_group"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_baseline_home_24"
+            android:title="@string/menu_home" />
+    </group>
+    <group android:id="@+id/nav_accept_gp"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_accept"
+            android:icon="@drawable/ic_baseline_add_alert_24"
+            android:title="@string/menu_accept" />
+    </group>
+    <group android:id="@+id/nav_gallery_group"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_baseline_account_box_24"
+            android:title="@string/menu_profile" />
+    </group>
+    <group android:id="@+id/nav_policy_group"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_policy"
+            android:icon="@drawable/ic_baseline_policy_24"
+            android:title="@string/policy" />
+    </group>
+    <group android:id="@+id/nav_version_group"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_dash"
+            android:icon="@drawable/ic_baseline_dashboard_24"
+            android:title="@string/Dashboard" />
+    </group>
+    <group android:id="@+id/nav_rate_app_group"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_rate_app"
+            android:icon="@drawable/ic_baseline_star_half_24"
+            android:title="@string/rate_app" />
+    </group>
+    <group android:id="@+id/nav_logout_group"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_baseline_exit_to_app_24"
+            android:title="@string/logout" />
+    </group>
+</menu>

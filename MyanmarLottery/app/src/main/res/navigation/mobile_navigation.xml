@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.myanmarlottery.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_viewLotteryNumberFragment"
+            app:destination="@id/viewLotteryNumberFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_alert"
+        android:name="com.example.myanmarlottery.ui.alert.ShowUserAlertFragment"
+        android:label="@string/menu_alert"
+        tools:layout="@layout/show_user_alert_fragment" />
+
+    <fragment
+        android:id="@+id/nav_create"
+        android:name="com.example.myanmarlottery.ui.alert.AlertFragment"
+        android:label="@string/menu_createAlert"
+        tools:layout="@layout/fragment_alert" />
+    <fragment
+        android:id="@+id/viewLotteryNumberFragment"
+        android:name="com.example.myanmarlottery.ui.lottery.ViewLotteryNumberFragment"
+        android:label="Lotto Number"
+        tools:layout="@layout/view_lottery_number_fragment" >
+        <action
+            android:id="@+id/action_viewLotteryNumberFragment_to_nav_alert"
+            app:destination="@id/nav_alert" />
+        <action
+            android:id="@+id/action_viewLotteryNumberFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.example.myanmarlottery.ui.detail.DetailFragment"
+        android:label="Details"
+        tools:layout="@layout/detail_fragment" />
+</navigation>

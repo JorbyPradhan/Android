@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.myanmarlotteryadmin.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_addDetailFragment2"
+            app:destination="@id/addDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.example.myanmarlotteryadmin.ui.gallery.GalleryFragment"
+        android:label="@string/menu_profile"
+        tools:layout="@layout/fragment_gallery" >
+        <action
+            android:id="@+id/action_nav_profile_to_nav_pass"
+            app:destination="@id/nav_pass" />
+        <action
+            android:id="@+id/action_nav_profile_to_changePhoneFragment"
+            app:destination="@id/changePhoneFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_pass"
+        android:name="com.example.myanmarlotteryadmin.ui.password.ChangePasswordFragment"
+        android:label="@string/menu_password"
+        tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/addDetailFragment"
+        android:name="com.example.myanmarlotteryadmin.ui.home.addpost.AddDetailFragment"
+        android:label="More Detail"
+        tools:layout="@layout/add_detail_fragment" />
+    <fragment
+        android:id="@+id/addFragment"
+        android:name="com.example.myanmarlotteryadmin.ui.home.addpost.AddFragment"
+        android:label="add_fragment"
+        tools:layout="@layout/add_fragment" >
+        <action
+            android:id="@+id/action_addFragment_to_addDetailFragment"
+            app:destination="@id/addDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/changePhoneFragment"
+        android:name="com.example.myanmarlotteryadmin.ui.phone.ChangePhoneFragment"
+        android:label="Change Number"
+        tools:layout="@layout/change_phone_fragment" />
+</navigation>

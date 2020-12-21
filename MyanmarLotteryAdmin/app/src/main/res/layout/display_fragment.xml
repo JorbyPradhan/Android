@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.home.viewpost.DisplayFragment"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+   >
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/rec_post"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clipToPadding="false"
+    android:layout_margin="5dp"
+    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+    tools:itemCount="5"
+    tools:listitem="@layout/item_post_list"/>
+    <TextView
+        android:id="@+id/txt_moreResult"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textColor="@color/colorPink"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:paddingStart="30dp"
+        android:paddingEnd="30sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="10dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:background="@drawable/edit_circle_bg"
+        android:text="More results"
+        tools:ignore="RtlSymmetry"
+        app:drawableStartCompat="@drawable/ic_baseline_keyboard_arrow_down_24" />
+</LinearLayout>
+</ScrollView>

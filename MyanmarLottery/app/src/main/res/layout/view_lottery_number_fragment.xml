@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/navLayout"
+    android:fitsSystemWindows="true"
+    android:background="@color/colorGray"
+    tools:context=".ui.lottery.ViewLotteryNumberFragment">
+<com.google.android.material.appbar.AppBarLayout
+    android:layout_width="match_parent"
+    android:layout_height="210dp"
+    android:theme="@style/AppTheme.AppBarOverlay">
+    <com.google.android.material.appbar.CollapsingToolbarLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:contentScrim="@color/colorGray"
+        app:layout_scrollFlags="scroll|exitUntilCollapsed"
+        app:titleEnabled="false">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/lightGrey"
+        app:layout_collapseMode="parallax"
+        >
+    <AutoCompleteTextView
+        android:id="@+id/change_town"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/bordervetical"
+        android:clickable="true"
+        android:cursorVisible="false"
+        android:layout_margin="5dp"
+        android:drawableEnd="@drawable/ic_baseline_keyboard_arrow_down_24"
+        android:drawablePadding="10dp"
+        android:focusable="false"
+        android:inputType="none"
+        android:paddingStart="20dp"
+        android:paddingEnd="10dp"
+        android:hint="@string/select_township"
+        android:textColorHint="@color/colorBlack"
+        android:textColor="@color/colorPink"
+        android:textSize="16sp"
+        tools:ignore="LabelFor" />
+    <AutoCompleteTextView
+        android:id="@+id/change_char"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/bordervetical"
+        android:clickable="true"
+        android:cursorVisible="false"
+        android:layout_margin="5dp"
+        android:drawableEnd="@drawable/ic_baseline_keyboard_arrow_down_24"
+        android:drawablePadding="10dp"
+        android:focusable="false"
+        android:inputType="none"
+        android:paddingStart="20dp"
+        android:paddingEnd="10dp"
+        android:hint="က"
+        android:textColorHint="@color/colorBlack"
+        android:textColor="@color/colorPink"
+        android:textSize="16sp"
+        tools:ignore="LabelFor" />
+        <Spinner
+            android:id="@+id/select_tic"
+            android:theme="@style/mySpinnerItemStyle"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="5dp"
+            android:entries="@array/ticket"
+            android:background="@drawable/bordervetical"
+           />
+    </LinearLayout>
+    </com.google.android.material.appbar.CollapsingToolbarLayout>
+</com.google.android.material.appbar.AppBarLayout>
+    <LinearLayout
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/lightGrey"
+        android:orientation="vertical">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rec_digit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:itemCount="5"
+        tools:listitem="@layout/digit_lst"
+       />
+    <TextView
+        android:id="@+id/txt_moreResult"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textColor="@color/colorPink"
+        android:textSize="20sp"
+        android:layout_marginTop="8dp"
+        android:paddingStart="30dp"
+        android:paddingEnd="30sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="10dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:background="@drawable/edit_circle_bg"
+        android:text="More results"
+        app:drawableStartCompat="@drawable/ic_baseline_keyboard_arrow_down_24"
+        tools:ignore="RtlSymmetry" />
+    </LinearLayout>
+<!--<TextView
+    android:id="@+id/btn_alert"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:text="Create Alert"
+    android:background="@drawable/bordervetical"
+    android:textColor="@color/colorPink"
+    android:textSize="20sp"
+    android:textAllCaps="false"
+    android:paddingStart="20dp"
+    android:gravity="center"
+    android:layout_gravity="bottom"
+    app:drawableStartCompat="@drawable/ic_baseline_add_alert_24" />-->
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

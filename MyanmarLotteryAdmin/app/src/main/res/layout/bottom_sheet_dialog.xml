@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner">
+
+        <RadioButton
+            android:id="@+id/radioButton1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="အက္ခရာတူ"
+            android:layout_marginStart="6dp"
+            android:textColor="@color/colorPink"
+            android:textSize="16sp"
+            android:onClick="radio_button_click"/>
+        <RadioButton
+        android:id="@+id/radioButton2"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="6dp"
+        android:layout_weight="1"
+        android:text="အက္ခရာမတူ"
+        android:textColor="@color/colorPink"
+        android:textSize="16sp"
+            android:onClick="radio_button_click"/>
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="6dp"
+            android:layout_weight="1"
+            android:text="အက္ခရာနှင့်ဂဏန်းမတူ"
+            android:textColor="@color/colorPink"
+            android:textSize="16sp"
+            android:onClick="radio_button_click"/>
+    </RadioGroup>
+<LinearLayout
+    android:id="@+id/funLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="8dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+    app:layout_constraintEnd_toEndOf="parent">
+
+    <LinearLayout
+        android:id="@+id/numLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp">
+    <EditText
+        android:id="@+id/editFromNumber"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:hint="From"
+        android:paddingStart="10dp"
+        android:textSize="18sp"
+        android:layout_marginEnd="10dp"
+        android:ems="10"
+        android:textColor="@color/colorPink"
+        android:inputType="number" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="18sp"
+            android:text="မှ"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:gravity="center"
+            android:textColor="@color/colorPink"/>
+
+    <EditText
+        android:id="@+id/editToNumber"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:ems="10"
+        android:hint="To"
+        android:textSize="18sp"
+        android:paddingStart="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_weight="1"
+        android:inputType="number"
+        android:textColor="@color/colorPink"
+        app:layout_constraintEnd_toEndOf="parent" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="18sp"
+            android:text="ထိ"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:gravity="center"
+            android:textColor="@color/colorPink"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/numLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp">
+    <EditText
+        android:id="@+id/editChar"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:hint="အက္ခရာ"
+        android:paddingStart="10dp"
+        android:textSize="18sp"
+        android:layout_marginEnd="10dp"
+        android:ems="10"
+        android:textColor="@color/colorPink"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/editNumber"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:ems="10"
+        android:hint="number"
+        android:textSize="18sp"
+        android:paddingStart="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_weight="2"
+        android:inputType="number"
+        android:textColor="@color/colorPink"
+        app:layout_constraintEnd_toEndOf="parent" />
+    </LinearLayout>
+</LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:clipToPadding="false"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/funLayout"
+        tools:itemCount="4"
+        tools:listitem="@layout/add_detail" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Submit"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerView" />
+</androidx.constraintlayout.widget.ConstraintLayout>

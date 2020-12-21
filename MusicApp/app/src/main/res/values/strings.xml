@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MusicApp</string>
+    <string name="local_music">Local Music </string>
+    <string name="favorite_songs">Favorite Songs</string>
+    <string name="albums">Albums</string>
+    <string name="recent">Recent</string>
+    <string name="search">Search</string>
+</resources>
